@@ -2,7 +2,7 @@ const express = require("express");
 const server = express();
 const dotenv = require("dotenv");
 dotenv.config();
-const PORT = 33 || process.env.PORT;
+const PORT = process.env.PORT || 5000;
 const apiRoutes = require("./routes");
 server.get("/",(req,res)=>{
     return res.send("HELLO WORLD")
